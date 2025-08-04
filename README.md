@@ -1,13 +1,10 @@
-Here's a well-structured `README.md` file based on your GitHub Test Case Generator project:
-
-```markdown
 # GitHub Test Case Generator
 
-demo: https://git-hub-test-generator.vercel.app/
+[![Live Demo](https://img.shields.io/badge/demo-live-green)](https://git-hub-test-generator.vercel.app/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 An AI-powered tool that generates comprehensive unit test cases for source code in public GitHub repositories.
 
-![App Screenshot](https://example.com/path-to-screenshot.png) <!-- Add a screenshot if available -->
 
 ## ✨ Features
 
@@ -123,20 +120,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - Google Gemini AI
 - GitHub REST API
 - All contributors and users
-```
-
-This README includes:
-- Badges for demo and license
-- Clear feature highlights
-- Complete installation instructions
-- Environment variable documentation
-- Usage guide
-- Contribution guidelines
-- License information
-- Acknowledgments
-
-You can customize it further by:
-1. Adding actual screenshots
-2. Including more detailed API documentation if needed
-3. Adding a "Troubleshooting" section
-4. Including test coverage information if available
