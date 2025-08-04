@@ -3,7 +3,7 @@ Here's a well-structured `README.md` file based on your GitHub Test Case Generat
 ```markdown
 # GitHub Test Case Generator
 
-[![Live Demo](https://git-hub-test-generator.vercel.app/)
+demo: https://git-hub-test-generator.vercel.app/
 
 An AI-powered tool that generates comprehensive unit test cases for source code in public GitHub repositories.
 
