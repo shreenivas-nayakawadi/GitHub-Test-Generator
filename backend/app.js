@@ -6,12 +6,29 @@ const aiRoutes = require('./ai');
 
 const app = express();
 
+const allowedOrigins = [
+  'https://git-hub-test-generator.vercel.app',
+  'http://localhost:5173',
+];
+
 const corsOptions = {
-  origin: 'https://git-hub-test-generator.vercel.app',
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  origin: function (origin, callback) {
+    if (!origin) {
+      // Allow requests with no origin (like curl or Postman)
+      callback(null, true);
+      return;
+    }
+    if (allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  optionsSuccessStatus: 200, // for legacy browsers
 };
 
 app.use(cors(corsOptions));
+
 
 app.use(express.json());
 
