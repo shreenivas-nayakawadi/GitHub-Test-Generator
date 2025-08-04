@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const BACKEND = 'http://localhost:5000/api';
+
+const BACKEND = import.meta.env.VITE_BACKEND_URL
 
 export const getFiles = async (owner, repo) =>
   axios.get(`${BACKEND}/github/files`, { params: { owner, repo } });
