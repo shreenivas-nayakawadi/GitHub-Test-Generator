@@ -6,7 +6,13 @@ const aiRoutes = require('./ai');
 
 const app = express();
 
-app.use(cors());
+const corsOptions = {
+  origin: 'https://git-hub-test-generator.vercel.app',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
 app.use('/api/github', githubRoutes);
